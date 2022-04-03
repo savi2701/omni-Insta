@@ -9,6 +9,21 @@
     display: flex;
     max-width: 1200px;
     margin: auto;
-    gap: 36px;
+    gap: 50px;
     padding: 96px 16px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 8px 64px;
+    background: #f6f6f6ee;
+}
+
+h2{
+    text-align: center;
+    margin: 36px 0;
+    width: 100%;
 }

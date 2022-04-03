@@ -3,7 +3,10 @@
         <img [src]="cardInfo.Image" alt="user-image">
     </div>
     <div class="card__footer">
-        <span class="card--likes">{{newLikes===0?cardInfo.likes:newLikes}} likes</span>
-        <span class="card--timestamp">{{cardInfo.timestamp}}</span>
+        <span class="card--likes">{{newLikes===cardInfo.likes+1?newLikes:cardInfo.likes}} likes</span>
+        <div>
+            <span class="card--date">{{cardInfo.timestamp | date}}</span>
+            <span class="card--time">{{cardInfo.timestamp | date:'shortTime'}}</span>
+        </div>
     </div>
 </div>

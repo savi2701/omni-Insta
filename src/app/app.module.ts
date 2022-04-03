@@ -9,6 +9,7 @@ import { DataService } from './services/data.service';
 import { InstaCardPreviewComponent } from './insta-card-preview/insta-card-preview.component';
 import { SortLikesPipe } from './sort-likes.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { SortLikesPipe } from './sort-likes.pipe';
     InstaCardComponent,
     InstaCardPreviewComponent,
     SortLikesPipe
+    
   ],
   imports: [
     BrowserModule,

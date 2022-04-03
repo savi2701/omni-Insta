@@ -1,11 +1,17 @@
-<h3>Preview</h3>
-<div class="card-preview">
-    <img [src]="selectedInstaCard.Image" alt="preview-image">
-    <div class="card-preview__footer">
-        <button class="like-btn" (click)="increaseLikes()">Like</button>
-        <div>
-            <span class="card-preview--likes">{{selectedInstaCard.likes}} likes</span>
-            <span class="card-preview--timestamp">{{selectedInstaCard.timestamp}}</span>
+<div class="card-preview__container">
+    <h3>Preview</h3>
+    <div class="card-preview">
+        <img [src]="selectedInstaCard.Image" alt="preview-image">
+        <div class="card-preview__footer">
+            <button class="like-btn" (click)="increaseLikes()">Like</button>
+            <div>
+                <span class="card-preview--likes">{{selectedInstaCard.likes}} likes</span>
+                <div>
+                    <span class="card-preview--date">{{selectedInstaCard.timestamp | date}}</span>
+                    <span class="card-preview--time">{{selectedInstaCard.timestamp | date:'shortTime'}}</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+

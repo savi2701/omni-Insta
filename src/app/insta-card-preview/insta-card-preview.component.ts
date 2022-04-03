@@ -19,6 +19,7 @@ export class InstaCardPreviewComponent implements OnInit {
 
   increaseLikes(){
     this.selectedInstaCard.likes++;
+    console.log("selecard likes"+this.selectedInstaCard.likes)
     this.dataService.likeIncreased.emit(this.selectedInstaCard.likes);
     
   }

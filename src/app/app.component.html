@@ -1,5 +1,12 @@
+<div class="header">
+  <img src="../assets/images/logo.png" alt="" class="logo" height="40px" width="40px">
+
+</div>
 <div class="insta-app">
   <app-insta-cards></app-insta-cards>
-  <app-insta-card-preview  *ngIf="selectedInstaCard" [selectedInstaCard]="selectedInstaCard"></app-insta-card-preview>
+  <app-insta-card-preview  *ngIf="selectedInstaCard;else defaultCard" [selectedInstaCard]="selectedInstaCard"></app-insta-card-preview>
+  <ng-template #defaultCard >
+    <h2>Pick a card to like and preview</h2>
+  </ng-template>
 
 </div>

@@ -1,4 +1,3 @@
 
-<div class="card-scroll">
-    <app-insta-card *ngFor="let instaCard of instaCards" [cardInfo]="instaCard" [newLikes]="newLikes" ></app-insta-card>
-</div>
+ <button class="sortbtn" (click)="sortPosts()">Sort Cards</button>
+ <app-insta-card *ngFor="let instaCard of instaCards" [cardInfo]="instaCard" [newLikes]="newLikes"></app-insta-card>
