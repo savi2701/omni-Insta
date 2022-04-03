@@ -1,0 +1,9 @@
+<div class="card" (click)="previewImage()">
+    <div class="card__header">
+        <img [src]="cardInfo.Image" alt="user-image">
+    </div>
+    <div class="card__footer">
+        <span class="card--likes">{{newLikes===0?cardInfo.likes:newLikes}} likes</span>
+        <span class="card--timestamp">{{cardInfo.timestamp}}</span>
+    </div>
+</div>

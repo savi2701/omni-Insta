@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService, Insta } from './services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'omnicell-project';
+  selectedInstaCard: any;
+
+  constructor(private dataService:DataService){}
+
+  ngOnInit(){
+    this.dataService.cardSelected.subscribe((instaCard:Insta)=>{
+      this.selectedInstaCard=instaCard;
+    })
+  }
+
 }
